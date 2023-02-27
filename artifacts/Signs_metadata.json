@@ -6,8 +6,103 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "signer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "Signing",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "addNew",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "retrieve",
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "allNews",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "count",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "sign",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalNews",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalPeople",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -22,32 +117,44 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "num",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "store",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "users",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "viewSigners",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
 		"devdoc": {
 			"kind": "dev",
-			"methods": {
-				"retrieve()": {
-					"details": "Return value ",
-					"returns": {
-						"_0": "value of 'number'"
-					}
-				},
-				"store(uint256)": {
-					"details": "Store value in variable",
-					"params": {
-						"num": "value to store"
-					}
-				}
-			},
+			"methods": {},
 			"version": 1
 		},
 		"userdoc": {
@@ -73,11 +180,11 @@
 	},
 	"sources": {
 		"Signs.sol": {
-			"keccak256": "0xa72c1d7bfe9373386925d105a4f0d1d4bb42766f55e85951dbd7cf598f326775",
+			"keccak256": "0xf69b767d945e40f97f41f94a5569b472670dd6c759cf1c4a895b678c144aaee3",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://94d6b7fe5ffc5dab6d565d4744e26bb14fb83873e7b50575cb1abf6bbdc2e04f",
-				"dweb:/ipfs/QmaGWGqhby1xspDf4pt8idzsEozkoKjzZydZbxWqwdiiNz"
+				"bzz-raw://bc9e7c96af5cacfc87f0beec746ac6808946ee5f23c6d5e5c628f2caba4afcc9",
+				"dweb:/ipfs/QmTT92Pv2xyyDyxwTrBM4qFtkZ5UxZjoSxZxfGLaCuAkbL"
 			]
 		}
 	},
