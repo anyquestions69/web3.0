@@ -25,13 +25,7 @@
 				"type": "event"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					}
-				],
+				"inputs": [],
 				"name": "addNew",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -50,19 +44,19 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"name": "allNews",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "count",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -77,32 +71,13 @@
 					}
 				],
 				"name": "sign",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
 				"name": "totalNews",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "totalPeople",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -180,11 +155,11 @@
 	},
 	"sources": {
 		"Signs.sol": {
-			"keccak256": "0xf69b767d945e40f97f41f94a5569b472670dd6c759cf1c4a895b678c144aaee3",
+			"keccak256": "0x23e5f2ed25ca7a1f20f11561037c11ed128aca6bb2978f40e7f207a34e36b3b6",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://bc9e7c96af5cacfc87f0beec746ac6808946ee5f23c6d5e5c628f2caba4afcc9",
-				"dweb:/ipfs/QmTT92Pv2xyyDyxwTrBM4qFtkZ5UxZjoSxZxfGLaCuAkbL"
+				"bzz-raw://5354948758e8c72a48a599d44a09c4e0bf40c82d4bef2485b68f0a73c6d4fdec",
+				"dweb:/ipfs/QmeR4YvmKj71KjU32PGYcHvu96YzKSJwSsegxnFUakLNoQ"
 			]
 		}
 	},

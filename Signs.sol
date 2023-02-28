@@ -4,39 +4,40 @@ pragma solidity >=0.7.0 <0.9.0;
 
 
 contract Signs {
-    mapping(uint256=>address) public users;
-    uint256 public totalPeople;
+    address[] public users;
     uint256 public totalNews;
-    struct Info{
-        string name;
-        uint256 count;
-        address[] signers;
-    }
-    mapping(uint256=>Info)public allNews;
+    
+    mapping(uint256=>address[])public allNews;
+
     event Signing(address signer, uint id);
+
     function addPerson()public{
-        users[totalPeople]=msg.sender;
-        totalPeople++;
+        users.push(msg.sender);
     }
-    function addNew(string memory _name)public{
-        allNews[totalNews].name=_name;
-        allNews[totalNews].count=0;
+    function addNew()public{
+        allNews[totalNews].push(msg.sender);
         totalNews++;
     }
-    function sign(uint256 _id) public returns(string memory){
-        for(uint256 i;i<allNews[_id].signers.length;i++){
-            if(allNews[_id].signers[i]==msg.sender){
-                return("You have already signed");
+    function sign(uint256 _id) public {
+        bool reg=false;
+        for(uint i=0;i<users.length;i++){
+            if(users[i]==msg.sender){
+                reg=true;
+                break;
             }
         }
-        allNews[_id].signers.push(msg.sender);
-        allNews[_id].count++;
+        require(reg==true, "Not authorized");
+        for(uint256 i;i<allNews[_id].length;i++){
+            require(allNews[_id][i]!=msg.sender, "You have already signed");
+            
+        }
+        allNews[_id].push(msg.sender);
         emit Signing(msg.sender, _id);
-        return("Ok");
     }
+    
     function viewSigners(uint256 _id)public view returns(address[] memory){
     
-        return allNews[_id].signers;
+        return allNews[_id];
     }
    
 
