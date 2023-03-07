@@ -1,0 +1,147 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 863px;
+}
+
+.u-section-1 .u-tabs-1 {
+  min-height: 803px;
+  margin-top: 60px;
+  margin-bottom: 0;
+  height: auto;
+}
+
+.u-section-1 .u-tab-item-1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.u-section-1 .u-tab-link-1 {
+  font-size: 1.25rem;
+  background-image: none;
+  font-weight: 600;
+  padding: 10px 25px;
+}
+
+.u-section-1 .u-tab-item-2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.u-section-1 .u-tab-link-2 {
+  font-size: 1.25rem;
+  background-image: none;
+  font-weight: 600;
+  padding: 10px 25px;
+}
+
+.u-section-1 .u-tab-pane-1 {
+  background-image: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 0 0 30px;
+}
+
+.u-section-1 .u-post-details-1 {
+  min-height: 375px;
+  width: 1140px;
+  margin: 0;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 14px 0 0;
+}
+
+.u-section-1 .u-metadata-1 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.u-section-1 .u-text-2 {
+  margin-bottom: 0;
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.u-section-1 .u-tab-pane-2 {
+  background-image: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-container-layout-3 {
+  padding: 30px 25px;
+}
+
+.u-section-1 .u-text-3 {
+  line-height: 1.8;
+  font-weight: normal;
+  margin: 44px 812px 0 0;
+}
+
+.u-section-1 .u-table-1 {
+  margin: 30px auto -30px 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-post-details-1 {
+    width: 940px;
+  }
+
+  .u-section-1 .u-text-3 {
+    line-height: 28.8px;
+    font-weight: 400;
+    margin-right: 612px;
+  }
+
+  .u-section-1 .u-table-1 {
+    margin-right: initial;
+    margin-left: initial;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-post-details-1 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 392px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-post-details-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-container-layout-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 242px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-post-details-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 42px;
+  }
+}
